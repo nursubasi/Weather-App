@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link ref="stylesheet" href="/styles.dd855970.css">
+  <script src="/styles.dd855970.js"></script><link rel="stylesheet" href="/src.a2b27638.css"></head>
+
+  <body>
+    <div class="p-3 mb-2 bg-info text-dark" style="
+        background: linear-gradient(
+          67.7deg,
+          rgb(252, 185, 125) -0.9%,
+          rgb(245, 231, 106) 22.8%,
+          rgb(160, 236, 208) 50.3%,
+          rgb(57, 178, 209) 75.5%,
+          rgb(183, 174, 193) 100.2%
+        );
+      ">
+      <div class="container border" style="
+          max-width: 600px;
+          margin: 100px auto 0px;
+          border: 1px solid #dadde1;
+          border-radius: 10px;
+          padding-bottom: 12px;
+          background-color: white;
+        ">
+        <div class="row">
+          <div class="col-6">
+            <div class="card" style="border-color: white; max-width: 400px;">
+              <div class="card-body">
+                <p class="card-text">
+                  Enter The Location or
+                  <a href="#" class="btn btn-outline-info" id="current-button" style="margin: 0, 10px;">
+                    Current
+                  </a>
+                </p>
+                <form id="search-form">
+                  <div class="input-group">
+                    <input type="search" class="form-control rounded" name="space" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="input-entry">
+                    <a href="#" class="btn btn-outline-info" id="search-button">
+                      Search</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card mb-3" style="border-color: white; max-width: 400px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <div class="clearfix">
+                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center" style="padding: 5px;">
+                      <img id="first-image" src="/01d.120869af.jpg" class="img-fluid rounded-start" alt="weather" style="width: 33%;">
+                      <p class="image-description" style="
+                          text-align: left;
+                          margin-left: 25px;
+                          font-size: 15px;
+                        ">
+                        Sunny
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="position-relative">
+                      <p class="card-text" style="
+                          font-size: 13px;
+                          text-align: center;
+                          margin: 5px;
+                        " id="weekday">
+                        Monday 16:00
+                      </p>
+                      <h3 class="card-title" style="font-size: 25px; text-align: center;" id="weather-place">
+                        Paris
+                      </h3>
+                      <p class="card-text" style="font-size: 16px; text-align: center;">
+                        <span id="default-degree"> 35 </span>
+                        <a href="#" id="celcius" style="color: #43c2e3; text-decoration: none;">°C</a>
+                        <span id="delete-with-current">
+                          |
+                          <a href="#" id="fahrenheit" style="color: #43c2e3; text-decoration: none;">°F</a>
+                        </span>
+                      </p>
+                      <p style="font-size: 14px; text-align: center;">
+                        <span id="wind-speed">5</span> km/H
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card" style="width: 120px;">
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">
+                  Tuesday
+                </p>
+                <img src="/02d.bfa09257.jpg" class="img-fluid rounded-start" alt="weather" style="width: 100%;">
+                <h5 class="card-title" style="text-align: center;">30°C</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 120px;">
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">
+                  Wednesday
+                </p>
+                <img src="/02d.bfa09257.jpg" class="img-fluid rounded-start" alt="weather" style="width: 100%;">
+                <h5 class="card-title" style="text-align: center;">35°C</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 120px;">
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">
+                  Thursday
+                </p>
+                <img src="/02d.bfa09257.jpg" class="img-fluid rounded-start" alt="weather" style="width: 100%;">
+                <h5 class="card-title" style="text-align: center;">32°C</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 120px;">
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">
+                  Friday
+                </p>
+                <img src="/02d.bfa09257.jpg" class="img-fluid rounded-start" alt="weather" style="width: 100%;">
+                <h5 class="card-title" style="text-align: center;">25°C</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="small-note">
+        <small>
+          <a class="small-note-link" href="">Open Source Code</a> by Nur Subasi
+        </small>
+      </div>
+    </div>
+    <script src="/src.a2b27638.js"></script>
+  </body>
+</html>
