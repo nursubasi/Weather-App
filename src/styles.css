@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: linear-gradient(
+    67.7deg,
+    rgb(252, 185, 125) -0.9%,
+    rgb(245, 231, 106) 22.8%,
+    rgb(160, 236, 208) 50.3%,
+    rgb(57, 178, 209) 75.5%,
+    rgb(183, 174, 193) 100.2%
+  );
+}
+a#current-button.btn.btn-outline-info {
+  margin: 0px 0px 0px 3px;
+  background-color: #43c2e3;
+  color: black;
+}
+
+a#current-button.btn.btn-outline-info:hover {
+  background-color: #fff;
+  color: #43c2e3;
+}
+
+.small-note {
+  text-align: center;
+  margin: 10px auto 73px;
+}
+.small-note-link {
+  color: #43c2e3;
+}
+.small-note-link:hover {
+  color: rgb(255, 127, 0);
+}
+p.card-text {
+  margin-bottom: 0.5rem;
+}
+p.image-description {
+  text-align: left;
+  margin-left: 25px;
+  font-size: 15px;
+}
+a.active {
+  color: black;
+}
